@@ -1,0 +1,16 @@
+.s-container {
+    width: 100%;
+    z-index: 30;
+    height: 100px;
+    display: flex;
+    padding: 0 80px;
+    position: fixed;
+    align-items: center;
+    justify-content: flex-end;
+}
+.s-input-wrapper {
+    justify-content: center;
+    max-width: 250px;
+    display: flex;
+    width: 100%;
+}
