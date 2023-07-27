@@ -1,6 +1,6 @@
-import React, { useContext } from "react";
-import { Autoplay } from "swiper";
+import React from "react";
 import Image from "next/image";
+import { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import style from './style.module.css';
 
@@ -10,23 +10,16 @@ const Ficcao = () => {
 
     const { dados, loading } = UseFilmeX();
 
-    if (loading) {
-        return <p>carregando...</p>
-    }
+    if (loading) { return <p>carregando...</p>}
 
     return (
         <>
             <section className={style['f-container']}>
 
                 <h3>Ficção</h3>
-                <Swiper
-                    loop={true}
-                    spaceBetween={15}
-                    slidesPerView={6}
-                    autoplay={{
-                        delay: 8000,
-                    }}
-                    modules={[Autoplay]}
+                <Swiper 
+                    loop={true} spaceBetween={15} slidesPerView={6} 
+                    autoplay={{ delay: 8000 }}modules={[Autoplay]}
                     className="mySwiper"
                 >
                     {

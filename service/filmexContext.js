@@ -11,14 +11,12 @@ function FilmexProvider({ children }) {
   const [content, setContent] = useState({});
   const [loading, setLoading] = useState(true);
 
-  const key = "735732ede8debf1045ba0fb58ca6033b";
   const token = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MzU3MzJlZGU4ZGViZjEwNDViYTBmYjU4Y2E2MDMzYiIsInN1YiI6IjYxNzc5MmU2NjVlMGEyMDA2MjdiZTQxMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.HAwrU3hzVvXNI976JOB7NLX4Kny62KVoWItD-L-MISw";
 
   useEffect(() => {
     const Dados = async () => {
       try {
-        const response = await axios.get(
-          `https://api.themoviedb.org/3/discover/movie?api_key=${key}&language=pt-BR`,
+        const response = await axios.get(`https://api.themoviedb.org/3/discover/movie?&language=pt-br`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

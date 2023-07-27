@@ -15,16 +15,11 @@ const Carrousel = () => {
 
     const swiperOptions = {
         modules: [Autoplay],
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false
-        },
+        autoplay: { delay: 5000, disableOnInteraction: false },
         loop: true,
     };
     
-    if (loading) {
-        return <p>Carregando...</p>
-    }
+    if (loading) { return <p>Carregando...</p>}
 
     return (
         <>
