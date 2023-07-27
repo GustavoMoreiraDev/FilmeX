@@ -1,16 +1,11 @@
 "use client";
 
-import { UseCategory } from "@/context/category";
-
-// import CatProv from "@/context/category";
-
 import Search from "@/components/search";
 import Carrousel from "@/components/home/carrousel";
 import Cards from "@/components/home/cards";
-import Ficcao from "@/components/home/ficcao";
-import Aventura from "@/components/home/aventura";
-// import CatList from "@/components/catList";
-
+import Ficcao from "@/components/home/generos/ficcao";
+import Aventura from "@/components/home/generos/aventura";
+import Historia from "@/components/home/generos/historia";
 
 export default function Home() {
 
@@ -21,6 +16,7 @@ export default function Home() {
       <Cards />
       <Ficcao />
       <Aventura />
+      <Historia />
     </>
   );
 }
