@@ -1,6 +1,6 @@
 import React from 'react';
 import { SwiperSlide } from 'swiper/react';
-import { GET_ID } from '@/utils/GET_ID';
+import { GET } from '@/utils/GET';
 import style from './style.module.css';
 
 import { Loading } from '@/components/loading';
@@ -9,7 +9,7 @@ import CardImg from '@/components/custom/cardImg';
 
 const Historia = () => {
     
-    const { conteudo, loading } = GET_ID({ genero: '36', page: '2' });
+    const { conteudo, loading } = GET({ genero: '36', page: '2' });
 
     return (
         <>

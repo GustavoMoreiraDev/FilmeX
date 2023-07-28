@@ -1,6 +1,6 @@
 import React from 'react';
 import { SwiperSlide } from 'swiper/react';
-import { GET_ID } from '@/utils/GET_ID';
+import { GET } from '@/utils/GET';
 import style from './style.module.css';
 
 import { Loading } from '@/components/loading';
@@ -9,7 +9,7 @@ import CatList from '@/components/custom/catList';
 
 const Ficcao = () => {
     
-    const { conteudo, loading } = GET_ID({ genero: '14', page: '4' });
+    const { conteudo, loading } = GET({ genero: '14', page: '4' });
 
     return (
         <>
