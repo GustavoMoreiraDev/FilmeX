@@ -20,7 +20,6 @@ const CatProv = ({ children }) => {
                     headers: {Authorization: `Bearer ${token}`}
                 });
                 setInfo(response.data);
-                console.log(response.data);
                 setLoading(false);
             } catch (error) {
                 console.log('erro', error)
@@ -29,7 +28,7 @@ const CatProv = ({ children }) => {
         Dados();
     },[params]);
 
-    const conteudo = info?.results;
+    const conteudo = info?.results || [];
 
     return (
         <>

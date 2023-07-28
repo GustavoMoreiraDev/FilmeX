@@ -1,0 +1,37 @@
+.s-container {
+    top: 0;
+    left: 0;
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    padding: 40px;
+    max-width: 25%;
+    position: fixed;
+    min-height: 100vh;
+    overflow-y: hidden;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000;
+}
+.s-menu-btn {
+    width: 100%;
+    border: none;
+    display: flex;
+    margin: 10px 0;
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: left;
+    transition: 0.3s;
+    justify-content: flex-start;
+    background-color: transparent;
+    border-bottom: 2px solid #ffffff;
+}
+.s-menu-btn:focus {
+    border-bottom: 2px solid red;
+    padding-left: 15px;
+    transition: 0.3s;
+    outline: none;
+    color: red;
+}

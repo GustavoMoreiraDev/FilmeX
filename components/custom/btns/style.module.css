@@ -1,0 +1,47 @@
+.c-btn-wrap {
+  width: 100%;
+  display: flex;
+  padding: 30px 0;
+  justify-content: center;
+}
+.c-btn {
+  width: 100%;
+  display: flex;
+  padding: 10px 0;
+  font-size: 14px;
+  max-width: 190px;
+  color: #ffffff;
+  transition: 0.3s;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  align-items: center;
+  border: solid 2px red;
+  justify-content: center;
+  background-color: red;
+}
+.c-btn:hover {
+  color: red;
+  transition: 0.3s;
+  max-width: 180px;
+  border: solid 2px red;
+  background-color: transparent;
+}
+.b-btn-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.b-btn-wrap button {
+    gap: 10px;
+    color: red;
+    border: none;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    background-color: transparent;
+}
+.b-btn-wrap button:focus {
+    outline: none;
+}

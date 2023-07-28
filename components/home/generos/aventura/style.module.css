@@ -18,6 +18,9 @@
     width: 180px !important;
     height: 250px !important;
     background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .f-card-img {
     width: 100%;

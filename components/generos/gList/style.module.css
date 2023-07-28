@@ -1,0 +1,15 @@
+.gl-container {
+    gap: 15px;
+    width: 100%;
+    display: flex;
+    max-width: 75%;
+    padding: 30px 0;
+    flex-wrap: wrap;
+    overflow-y: hidden;
+    align-items: center;
+    justify-content: center;
+}
+.gl-card {
+    width: 180px;
+    height: 250px;
+}
