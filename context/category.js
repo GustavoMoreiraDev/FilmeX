@@ -5,13 +5,14 @@ export const CategoryContext = createContext({});
 
 const CatProv = ({ children }) => {
 
-    const [ info, setInfo ] = useState({});
     const [ gen, setGen ] = useState('');
+    const [ info, setInfo ] = useState({});
     const [ loading, setLoading ] = useState(true);
+    const [ pagination, setPagination ] = useState('1');
 
     const token = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MzU3MzJlZGU4ZGViZjEwNDViYTBmYjU4Y2E2MDMzYiIsInN1YiI6IjYxNzc5MmU2NjVlMGEyMDA2MjdiZTQxMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.HAwrU3hzVvXNI976JOB7NLX4Kny62KVoWItD-L-MISw"
     const baseUrl = "https://api.themoviedb.org/3/discover/movie?";
-    const params = `with_genres=${gen}`;
+    const params = `with_genres=${gen}&page=${pagination}`;
     
     useEffect(() => {
         const Dados = async () => {
@@ -32,7 +33,7 @@ const CatProv = ({ children }) => {
 
     return (
         <>
-            <CategoryContext.Provider value={{ conteudo, loading, setGen }}>
+            <CategoryContext.Provider value={{ conteudo, loading, setGen, setPagination }}>
                 {children}
             </CategoryContext.Provider>
         </>

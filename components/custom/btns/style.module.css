@@ -48,3 +48,20 @@
 .b-btn-wrap button:focus {
     outline: none;
 }
+
+
+.bp-wrapper {
+  gap: 10px;
+  width: 100%;
+  display: flex;
+  margin-top: -50px;
+  justify-content: center;
+  padding: 20px 0 30px 26%;
+}
+.bp-wrapper button {
+  background-color: transparent;
+  color: #ffffffd2;
+  cursor: pointer;
+  font-size: 25px;
+  border: none;
+}
