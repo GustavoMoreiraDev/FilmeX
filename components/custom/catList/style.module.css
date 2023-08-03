@@ -2,8 +2,11 @@
     gap: 10px;
     width: 100%;
     display: flex;
+    margin: 0 auto;
     flex-wrap: wrap;
+    margin-top: 20px;
     padding: 15px 2%;
+    max-width: 1350px;
     justify-content: space-between;
 }
 .f-container h3 {

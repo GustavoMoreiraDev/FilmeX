@@ -11,7 +11,7 @@ const ControlProv = ({ children }) => {
     const DataAvent = (i) => { setAvent([i])};
 
     console.log('teste', avent);
-''
+    
     return (
         <ControllerContext.Provider value={{ avent, DataAvent }}>
             {children}
