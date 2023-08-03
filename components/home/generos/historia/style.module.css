@@ -1,9 +1,9 @@
 .f-card {
+    width: 180px;
+    height: 250px;
     display: flex;
     border-radius: 10px;
     align-items: center;
-    width: 180px;
-    height: 250px;
     background-color: #000;
     justify-content: center;
 }

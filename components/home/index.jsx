@@ -19,10 +19,10 @@ const HomePage = () => {
             <Carrousel />
             <Cards />
             <Ficcao />
-            {modal && ( <Modal click={() => setModal(!modal)} /> )}
             <Aventura click={() => setModal(!modal)} />
             <Historia />
             <CenterBtn conteudo={'Outros Generos'} rota={'/generos'} />
+            {modal && ( <Modal click={() => setModal(!modal)} /> )}
         </>
     )
 };

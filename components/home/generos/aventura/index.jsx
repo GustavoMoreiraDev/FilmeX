@@ -19,7 +19,7 @@ const Aventura = ({ click }) => {
             <CatList categoria={'Aventura'}>
                 {conteudo.map((item) => (
                     <SwiperSlide key={item.id}>
-                        <div onClick={() => handleClick()} className={style['f-card']}>
+                        <div className={style['f-card']}>
                             {loading ? 
                                 ( <Loading /> ) 
                                 : 

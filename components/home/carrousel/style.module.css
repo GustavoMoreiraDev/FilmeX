@@ -49,3 +49,17 @@
     max-width: 60ch;
     z-index: 2;
 }
+
+@media screen and (max-width: 500px) {
+    .c-container {
+        height: 550px;
+    }
+    .c-content-slider {
+        padding: 0 4% 0 2%;
+        padding-top: 140px;
+    }
+    .c-content-slider h1 {
+        font-size: 28px;
+        max-width: 25ch;
+    }
+};

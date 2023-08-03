@@ -1,8 +1,12 @@
 .c-btn-wrap {
   width: 100%;
   display: flex;
+  min-width: 100%;
   padding: 30px 0;
+  max-width: 1050px;
+  flex-direction: row;
   justify-content: center;
+  background-color: green;
 }
 .c-btn {
   width: 100%;
