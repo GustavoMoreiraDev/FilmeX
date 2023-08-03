@@ -1,17 +1,31 @@
 .gl-container {
     width: 100%;
     display: flex;
-    gap: 30px 15px;
     max-width: 75%;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+.gl-content {
+    width: 100%;
+    display: flex;
+    gap: 30px 15px;
     flex-wrap: wrap;
+    max-width: 1350px;
     max-height: 860px;
     padding: 30px 50px;
     overflow-y: hidden;
-    margin-bottom: 30px;
     align-items: center;
     justify-content: center;
 }
 .gl-card {
     width: 180px;
     height: 250px;
+}
+
+@media screen and (max-width: 1148px) {
+    .gl-content {
+        max-width: 100%;
+        max-height: none;
+        padding: 30px;
+    }
 }

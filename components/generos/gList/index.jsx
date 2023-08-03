@@ -12,18 +12,20 @@ const Glist = () => {
     return (
         <>
             <section className={style['gl-container']}>
-                {
-                    loading ?
+                <div className={style['gl-content']}>
+                    {
+                        loading ?
                         (<Loading />) 
-                        :
-                        (
-                            conteudo.map((item) => (
-                                <div className={style['gl-card']} key={item.id}>
-                                    <CardImg src={item.poster_path} />
-                                </div>
-                            ))
-                        )
-                }
+                            :
+                            (
+                                conteudo.map((item) => (
+                                    <div className={style['gl-card']} key={item.id}>
+                                        <CardImg src={item.poster_path} />
+                                    </div>
+                                ))
+                                )
+                    }
+                </div>
             </section>
         </>
     )
